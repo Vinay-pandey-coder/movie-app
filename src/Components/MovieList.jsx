@@ -29,6 +29,14 @@ const trendingImages = [
   },
 ];
 
+const badgeImages = [
+  "https://freepngimg.com/save/129685-1-number-download-hq/2000x2588",
+  "https://www.indiaparenting.com/coloring-pages/uploads/5f8977efd2b58.png",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Classic_alphabet_numbers_3_at_coloring-pages-for-kids-boys-dotcom.svg/1582px-Classic_alphabet_numbers_3_at_coloring-pages-for-kids-boys-dotcom.svg.png",
+  "https://i.pinimg.com/originals/a4/68/7d/a4687da4ebdb7eff9713edc826564bae.png",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Classic_alphabet_numbers_5_at_coloring-pages-for-kids-boys-dotcom.svg/640px-Classic_alphabet_numbers_5_at_coloring-pages-for-kids-boys-dotcom.svg.png",
+];
+
 const MovieList = () => {
   const [movies, setMovies] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -100,32 +108,41 @@ const MovieList = () => {
         </div>
       </div>
 
-      {/* Search Results */}
-      <div className="mt-10 px-4 flex flex-wrap justify-center gap-6">
-        {regularMovies.map((movie, index) => (
-          <div
-            key={index}
-            className="text-white p-[30px] rounded-lg shadow-md w-58 text-center transform transition duration-300 hover:scale-105 hover:bg-white hover:text-black cursor-pointer"
-          >
-            <img
-              src={movie.src}
-              alt={movie.title}
-              className="object-cover h-64 w-full rounded hover:shadow-lg"
-            />
-            <h2 className="mt-2 text-lg font-semibold">{movie.title}</h2>
-            <button
-              onClick={() => addToWatchLater(movie)}
-              className="mt-2 bg-green-600 px-3 py-1 rounded  flex items-center overflow-hidden w-8 hover:w-32 transition-[width] duration-300 ease-in-out"
+      {/* Search Results (trending + regular together) */}
+      <div className="mt-10 px-4 flex flex-wrap justify-center gap-6 relative">
+        {filteredMovies.length > 0 ? (
+          filteredMovies.map((movie, index) => (
+            <div
+              key={index}
+              className="relative text-white p-[30px] rounded-lg shadow-md w-58 text-center transform transition duration-300 hover:scale-105 hover:bg-white hover:text-black cursor-pointer"
             >
-              <span className="mx-auto hover:mx-0">+</span>
-              <span className="ml-[9px] cursor-pointer whitespace-nowrap opacity-100  transition-opacity duration-300 text-white">
-                Watch Later
-              </span>
-            </button>
-          </div>
-        ))}
+              {/* Badge image for trending movies */}
+              {movie.trending && (
+                <img
+                  src={badgeImages[movie.badgeIndex] || ""}
+                  alt={`Number ${movie.badgeIndex + 1}`}
+                  className="absolute -left-6 top-1/2 transform -translate-y-1/2 h-[40px] w-auto z-10 rounded-full"
+                />
+              )}
 
-        {regularMovies.length === 0 && trendingMovies.length === 0 && (
+              <img
+                src={movie.src}
+                alt={movie.title}
+                className="object-cover h-64 w-full rounded hover:shadow-lg"
+              />
+              <h2 className="mt-2 text-lg font-semibold">{movie.title}</h2>
+              <button
+                onClick={() => addToWatchLater(movie)}
+                className="mt-2 bg-green-600 px-3 py-1 rounded flex items-center overflow-hidden w-8 hover:w-32 transition-[width] duration-300 ease-in-out"
+              >
+                <span className="mx-auto hover:mx-0">+</span>
+                <span className="ml-[9px] cursor-pointer whitespace-nowrap opacity-100 transition-opacity duration-300 text-white">
+                  Watch Later
+                </span>
+              </button>
+            </div>
+          ))
+        ) : (
           <p className="text-white text-xl mt-10">No movies found</p>
         )}
       </div>
@@ -144,19 +161,7 @@ const MovieList = () => {
                 className="relative transform transition duration-300 hover:scale-105"
               >
                 <img
-                  src={
-                    item.badgeIndex === 0
-                      ? "https://freepngimg.com/save/129685-1-number-download-hq/2000x2588"
-                      : item.badgeIndex === 1
-                      ? "https://www.indiaparenting.com/coloring-pages/uploads/5f8977efd2b58.png"
-                      : item.badgeIndex === 2
-                      ? "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Classic_alphabet_numbers_3_at_coloring-pages-for-kids-boys-dotcom.svg/1582px-Classic_alphabet_numbers_3_at_coloring-pages-for-kids-boys-dotcom.svg.png"
-                      : item.badgeIndex === 3
-                      ? "https://i.pinimg.com/originals/a4/68/7d/a4687da4ebdb7eff9713edc826564bae.png"
-                      : item.badgeIndex === 4
-                      ? "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Classic_alphabet_numbers_5_at_coloring-pages-for-kids-boys-dotcom.svg/640px-Classic_alphabet_numbers_5_at_coloring-pages-for-kids-boys-dotcom.svg.png"
-                      : ""
-                  }
+                  src={badgeImages[item.badgeIndex] || ""}
                   alt={`Number ${item.badgeIndex + 1}`}
                   className="absolute -left-10 top-1/2 transform -translate-y-1/2 h-[60px] w-auto z-10 rounded-full"
                 />
