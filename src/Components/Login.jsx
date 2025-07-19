@@ -9,6 +9,8 @@ const Login = () => {
     password: "",
   });
 
+  const [error, setError] = useState(""); 
+
   function handleSubmit(e) {
     e.preventDefault();
     const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
@@ -18,10 +20,11 @@ const Login = () => {
     );
 
     if (matchedUser) {
-      localStorage.setItem("currentUser", JSON.stringify(matchedUser)); // ✅ Add this
+      localStorage.setItem("currentUser", JSON.stringify(matchedUser));
+      setError(""); 
       navigate("/");
     } else {
-      navigate("/error");
+      setError("Incorrect name or password."); 
     }
   }
 
@@ -34,7 +37,6 @@ const Login = () => {
       />
 
       <div className="absolute inset-0 bg-opacity-40"></div>
-
 
       <div className="relative z-10 flex items-center justify-center h-full px-4">
         <form
@@ -53,7 +55,7 @@ const Login = () => {
           </label>
           <input
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
-            type="name"
+            type="text"
             id="name"
             onChange={(e) => setState({ ...state, name: e.target.value })}
             required
@@ -66,13 +68,17 @@ const Login = () => {
             Password
           </label>
           <input
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-6"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2"
             type="password"
             id="pass"
             placeholder="Enter your password"
             onChange={(e) => setState({ ...state, password: e.target.value })}
             required
           />
+
+          {error && (
+            <p className="text-red-600 text-sm mb-4">{error}</p>
+          )}
 
           <input
             type="submit"
