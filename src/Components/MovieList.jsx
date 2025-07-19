@@ -1,31 +1,54 @@
+// MovieList.js
 import { useEffect, useState } from "react";
 import data from "./Data.json";
+import MovieDetails from "./MovieDetails";
 
 const trendingImages = [
   {
     src: "image/home-1.jpg",
     title: "Spider-Man Homecoming",
     badgeIndex: 0,
+    banner: "",
+    description: "Peter Parker balances high school life and superhero duties.",
+    characters: [
+      { name: "Peter Parker", image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSS7Aqzzyn43SzMfs09CW9l6y08xzjblJStKWoT4FTyi4gOqWB-6RN5Hjh6UDRZ8nqMf3Lxj47Uw4idaouJJxbuvd9SC2fgsDs-Oq8q8Ls" },
+      { name: "Tony Stark", image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZ_qHCcHpWzYETHFr6Elihc9ApvVm2dzU7-iB14l6Pbwjnv24kI_VEpRpMhUs-YqgghO1kToPwRZQneJrbz_Jya3t4h0pTfU8p_Kpdiw" },
+    ],
   },
   {
     src: "image/poster-3.png",
     title: "Joker",
     badgeIndex: 1,
+    banner: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-sIRUSy5ptR8wsM772eHI_FQrkDkNwtTU1w&s",
+    description: "A mentally troubled stand-up comedian embarks on a violent path.",
+    characters: [{ name: "Arthur Fleck", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdT21cAMdWtigkkn3pgUUMoHmulkcEZklJXuYMXz5zRl1mrySKFUJsGf-VE7Mmy5S68E5UpJDKfAtohi9s30I_pw" }],
   },
   {
     src: "image/poster-8.png",
     title: "Jurassic park",
     badgeIndex: 2,
+    banner: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnShSlLvWjfZ1sfwz_3W4TaTwrLsqN3CQ0uw&s",
+    description: "Dinosaurs run loose in a theme park. Chaos ensues.",
+    characters: [{name: "Laura Dern", image : "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQQIYmCBE-7dCJIROBiIejAg75GM4FyHX92Orp0CQVOj6LcM6-sl4aR1E89Sxn3KEYVf5HiHzbYu6b7auk"}],
   },
   {
     src: "image/poster-7.png",
     title: "SuperMan",
     badgeIndex: 3,
+    banner: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqMdN7ftG6qQDeyYYyOhJ9Zkzj0naH-NGwg&s",
+    description: "Clark Kent fights for justice as Superman.",
+    characters: [      {
+        name: "David Corenswet",
+        image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYN5kpI3xV_yZUdXGSRc0I8CNzZYzMkWBO0EepisttGLQdtXxKlX-0_U-rq-0eVk596lL6RQAJ0otS4E0dU0RRog"
+      }],
   },
   {
     src: "image/poster-10.png",
     title: "HouseFull 5",
     badgeIndex: 4,
+    banner: "https://images.moneycontrol.com/static-mcnews/2025/06/20250606050545_Housefull-5-twitter-review.jpg?impolicy=website&width=770&height=431",
+    description: "A chaotic comedy of errors and mistaken identities.",
+    characters: [{name:"Akshay Kumar", image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR23vZi5CLdOfEIptcvJgh08KKCHoc3hATWOFfNO6rMRxgguFPnEHKqUxagxHqdhKuIftQtTB6BbrkKJR5rszd1-g"}],
   },
 ];
 
@@ -41,6 +64,7 @@ const MovieList = () => {
   const [movies, setMovies] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredMovies, setFilteredMovies] = useState([]);
+  const [selectedMovie, setSelectedMovie] = useState(null);
 
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
   const watchListKey = `watchLaterList_${currentUser?.id || currentUser?.name}`;
@@ -60,7 +84,7 @@ const MovieList = () => {
 
     const allMovies = [...dataWithId, ...trendingWithFlag];
     setMovies(allMovies);
-    setFilteredMovies(dataWithId); // only regular movies for initial view
+    setFilteredMovies(dataWithId);
   }, []);
 
   useEffect(() => {
@@ -102,7 +126,7 @@ const MovieList = () => {
             placeholder="Search movies..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="px-4 py-2 border border-gray-300 text-white rounded-md focus:outline-none"
+            className="px-4 py-2 border border-gray-300 text-white bg-transparent rounded-md focus:outline-none"
           />
         </div>
       </div>
@@ -118,6 +142,7 @@ const MovieList = () => {
               <img
                 src={movie.src}
                 alt={movie.title}
+                onClick={() => setSelectedMovie(movie)}
                 className="object-cover h-64 w-full rounded hover:shadow-lg"
               />
               <h2 className="mt-2 text-lg font-semibold">{movie.title}</h2>
@@ -137,13 +162,12 @@ const MovieList = () => {
         )}
       </div>
 
-      {/* Trending Movies (only show when no search query) */}
+      {/* Trending Movies */}
       {searchQuery === "" && (
         <div>
           <h1 className="text-3xl font-bold text-white text-center mt-12">
             Trending Movies
           </h1>
-
           <div className="relative flex justify-center gap-12 mt-10 flex-wrap border-b-[25px]">
             {trendingMovies.map((item, index) => (
               <div
@@ -155,11 +179,11 @@ const MovieList = () => {
                   alt={`Number ${item.badgeIndex + 1}`}
                   className="absolute -left-10 top-1/2 transform -translate-y-1/2 h-[60px] w-auto z-10 rounded-full"
                 />
-
                 <img
                   src={item.src}
                   alt={item.title}
                   className="w-auto h-[300px] rounded shadow-lg cursor-pointer"
+                  onClick={() => setSelectedMovie(item)}
                 />
                 <h2 className="text-white text-center mt-2 font-semibold">
                   {item.title}
@@ -176,6 +200,11 @@ const MovieList = () => {
             ))}
           </div>
         </div>
+      )}
+
+      {/* Poster Detail Modal */}
+      {selectedMovie && (
+        <MovieDetails movie={selectedMovie} onClose={() => setSelectedMovie(null)} />
       )}
     </>
   );

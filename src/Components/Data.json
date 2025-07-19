@@ -1,82 +1,277 @@
 [
   {
     "src": "https://www.indiewire.com/wp-content/uploads/2019/12/nightingale-1.jpeg?w=675",
-    "title": "The Nightingale"
+    "title": "The Nightingale",
+    "banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6tpoFPosr0Ip4AH_trBjii5FeP6RTHIN_mQ&s",
+    "description": "A dark tale of revenge and redemption.",
+    "characters": [
+      {
+        "name": "Aisling Franciosi",
+        "image": "https://m.media-amazon.com/images/M/MV5BOGUyY2YwZTktNWI3ZS00ZDhkLWJlMzItNGFkMzc5NzZkMjdiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      }
+    ]
   },
+
   {
     "src": "https://rukminim3.flixcart.com/image/850/1000/jf8khow0/poster/a/u/h/small-hollywood-movie-poster-blade-runner-2049-ridley-scott-original-imaf3qvx88xenydd.jpeg?q=90&crop=false",
-    "title": "Blade Runner 2049"
+    "title": "Blade Runner 2049",
+    "banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmwNSQPpHHn6Iupv9BTDv74iWSAILyNnaX7A&s",
+    "description": "A young blade runner uncovers a long-buried secret.",
+    "characters": [
+      {
+        "name": "K",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeGFAbLyG7t-HuOz-t8ew86-XHAoScwsZCrfHHQRnWMOIMBTfyp7RuhA_Mnnb3LUDo1aI8nMfiYdBN6ygAGj1vc6klGVnrBmRaFsXnZczOEg"
+      },
+      {
+        "name": "Deckard",
+        "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTns9SHfYYkZ5wA5x0z_Clj60oEkb0i1z4hTWpXtZP-aCeU5TSxWLPX5zHbP3uYa_PTp_D-7frFDq8cwzjJoC-bbF3FmzMCWBoWZL_oKhSOngFOXXJULas51TO-6iV0aYThi3oysH2qk6Fk"
+      }
+    ]
   },
+
   {
     "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFe5bJ81lpaVXUcenkcX7SSXD8Jb1xQ5obbQ&s",
-    "title": "Thor Ragnarok"
+    "title": "Thor Ragnarok",
+    "banner": "https://i0.wp.com/teaser-trailer.com/wp-content/uploads/2017/09/Thor-3-Ragnarok-Banner-Poster.jpg?ssl=1",
+    "description": "Thor must escape and save Asgard from destruction.",
+    "characters": [
+      {
+        "name": "Chris Hemsworth",
+        "image": "https://media.gq-magazine.co.uk/photos/6470af28406976fe334ee32a/3:2/w_1620,h_1080,c_limit/GQSUMMERONLINE_CHRIS_HEMSWORTH_ONLINE_HEADER.jpg"
+      },
+      {
+        "name": "Tom Hiddleston",
+        "image": "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQ-IwVHWlWD6Eb0uDo2jSroU2tRFcN3QNoSsvc5_lVMtSiv4bV7mIHuRRtZVud8UEgtmpC0LjiLOecRp53dwSSl4Io7Sf8T5pyxmojUnAy8vBFbEPU77i_Zh8kggovSlD0MS6x22twGX5x9"
+      }
+    ]
   },
+
   {
     "src": "https://cdn.siasat.com/wp-content/uploads/2025/05/image-89.jpg",
-    "title": "Sitaare Zameen Par"
+    "title": "Sitaare Zameen Par",
+    "banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStmwBnDLEk-Gzsj1IhuMWgw8GrfDr5euPn8sXAnz4xIuJvJQ7d1TxdYN70gfluNyzLWBU&usqp=CAU",
+    "description": "An inspiring story about education and imagination.",
+    "characters": [
+      {
+        "name": "Aamir Khan",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/50/Aamir_Khan_after_a_spa_session_in_Bandra.jpg"
+      }
+    ]
   },
+
   {
     "src": "https://cdn.marvel.com/content/1x/captainamericabravenewworld_lob_crd_05.jpg",
-    "title": "Captain America Brave New World"
+    "title": "Captain America Brave New World",
+    "banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2O3v5dg5hWNzJH2eKr_Is9DwqpnYV6ejpX8FSkmwih2dlfetJChhVA1XBD9PBUVMj0io&usqp=CAU",
+    "description": "Sam Wilson continues the legacy of Captain America.",
+    "characters": [
+      {
+        "name": "Anthony Mackie",
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0qIuflE992QbiJX9xMGPFc12rxVH-7i9Ex77ukEIC_krrfiObhGPscpg6JSeH0Ah9ZrHUNNeYYLIkw8pi81AHHRVPdfPQAKLx3MwPAfY8"
+      }
+    ]
   },
+
   {
     "src": "https://pbs.twimg.com/media/GuvcXeZWQAApr47.jpg:large",
-    "title": "War 2"
+    "title": "War 2",
+    "banner": "https://www.yashrajfilms.com/images/default-source/movies/war2/war2_767x430.jpg?sfvrsn=8e46decc_1",
+    "description": "Two elite agents face off in a high-octane thriller.",
+    "characters": [
+      {
+        "name": "Hrithik Roshan",
+        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHQbQ4dbOXPaYFq8eML8ujKBd3svZ93ML0w27fKIIb3BO_2mNpNjcf4w7Ee5tgYHIMBPPR6ZAUyCthR7jCgPx2-C-h0KdYDKp6g1ghteFrtQ"
+      }
+    ]
   },
+
   {
     "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqNB0RU1FgryM9N0yP43Yn3t08FVkPcADnoGZXCXNtnVhHrRyP1lS6lqsY-MHFsMV3rkWIj0DiDHj1BoomUWOBv96Rt2_66IVWDI_hOjIcSse22k6ic9izx04tIagyMTIfXB3xwSfHVcVJ5hsNiBOX8nO81V2f7z_Pmnohu6xnb6w_BYpFnDPsWK1lFAk/s2048/Sikandar.jpg",
-    "title": "Sikandar"
+    "title": "Sikandar",
+    "banner": "https://static.toiimg.com/thumb/msid-116686538,width-1280,height-720,imgsize-25616,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+    "description": "A hero rises from the shadows.",
+    "characters": [
+      {
+        "name": "Salman Khan",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW3BbsW06fC1fDZ_4BXKid_PJBTf-BAFCumQ&s"
+      }
+    ]
   },
+
   {
-    "src": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/af88614f-fa76-475c-8cd9-7a491f9ba94b/diszcce-9083060b-4a86-4677-9727-9a5603264e16.jpg/v1/fill/w_734,h_1088,q_70,strp/superman__2025__custom_hindi_poster_by_hollywoodnewsindia_diszcce-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDA5NiIsInBhdGgiOiJcL2ZcL2FmODg2MTRmLWZhNzYtNDc1Yy04Y2Q5LTdhNDkxZjliYTk0YlwvZGlzemNjZS05MDgzMDYwYi00YTg2LTQ2NzctOTcyNy05YTU2MDMyNjRlMTYuanBnIiwid2lkdGgiOiI8PTI3NjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.qtf6_e4cgMqlCIO1YzBbCwy5PZJQso16S273HUOnANU",
-    "title": "Superman"
+    "src": "https://lh5.googleusercontent.com/proxy/eSLJT_IcXdBK_GJ3T7HsxjsQwsWJ89NxnyM5PwFgb5rH24judmbNqQRP7FnLa8qMtu31VV_bIJwePK8GTW77nvbrq3PS",
+    "title": "Superman",
+    "banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqMdN7ftG6qQDeyYYyOhJ9Zkzj0naH-NGwg&s",
+    "description": "Clark Kent returns to protect the Earth.",
+    "characters": [
+      {
+        "name": "David Corenswet",
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYN5kpI3xV_yZUdXGSRc0I8CNzZYzMkWBO0EepisttGLQdtXxKlX-0_U-rq-0eVk596lL6RQAJ0otS4E0dU0RRog"
+      }
+    ]
   },
+
   {
     "src": "https://indianexpress.com/wp-content/uploads/2025/07/Son-of-Sardaar-2-July-25.jpg",
-    "title": "Son of Sardaar 2"
+    "title": "Son of Sardaar 2",
+    "banner": "https://i.ytimg.com/vi/HSX_KPfbP1o/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBfd84Tw-WheVWjLshg2oTMDa2bHw",
+    "description": "More laughs and action in this Punjabi sequel.",
+    "characters": [
+      {
+        "name": "Ajay Devgn",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB9t8XAHvJjvffB23eZEVWYPypYsNJkijDTw&s"
+      }
+    ]
   },
+
   {
     "src": "https://cdn.marvel.com/content/1x/thenewavengers_lob_crd_01.jpg",
-    "title": "New Avengers"
+    "title": "New Avengers",
+    "banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8pPJFRa69g-L4VWkal9E7dcyHip3q71qV5_h-1FMzf2EvLqkQoCDum0HxbkhInPkGViU&usqp=CAU",
+    "description": "A new team rises to protect the world.",
+    "characters": [
+      {
+        "name": "Sebastian Stan",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJrlw9XWENh2ZoC4984s5v2h9YLRky28htgYQAS6MMy_cWvIckGewl_8izaP1t3aBAT48L-Rgq4rX89oilUl00Xg"
+      }
+    ]
   },
+
   {
-    "src": "https://m.media-amazon.com/images/M/MV5BZWU4NDY0ODktOGI3OC00NWE1LWIwYmQtNmJiZWU3NmZlMDhkXkEyXkFqcGc@._V1_.jpg", 
-    "title": "Until Dawn"
+    "src": "https://m.media-amazon.com/images/M/MV5BZWU4NDY0ODktOGI3OC00NWE1LWIwYmQtNmJiZWU3NmZlMDhkXkEyXkFqcGc@._V1_.jpg",
+    "title": "Until Dawn",
+    "banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCdtzqJ2FVolux4TkmxTxDIqX10X1q7w7QLg&s",
+    "description": "A chilling survival story in the woods.",
+    "characters": [
+      {
+        "name": "Belmont Cameli",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Belmont_Cameli_by_Gage_Skidmore.jpg/500px-Belmont_Cameli_by_Gage_Skidmore.jpg"
+      }
+    ]
   },
+
   {
     "src": "https://i.pinimg.com/736x/f2/3b/ca/f23bca5ac002e1e03d0ef929e0492974.jpg",
-    "title": "Happy Gilmore 2"
+    "title": "Happy Gilmore 2",
+    "banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdyywqWA4lRDXCw93PnenM6ZAvx_53EJjJvA&s",
+    "description": "Gilmore returns for one last golf showdown.",
+    "characters": [
+      {
+        "name": "Adam Sandler",
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQEhI49uanSMjQsWLEU1Ca_GZIlAtUhDE3s5zBD91lkQANtcxGJCC_izGklQ0h8cDkLTx8r_L8TIb2dF2okBFlFw"
+      }
+    ]
   },
+
   {
     "src": "https://i.pinimg.com/736x/d1/cc/02/d1cc02595113623e7378de3756f7936f.jpg",
-    "title": "The Last Of Us"
+    "title": "The Last Of Us",
+    "banner": "https://i.pinimg.com/736x/b1/42/76/b14276bb7e7817fb39c29ef371cefe26.jpg",
+    "description": "A journey of survival in a post-apocalyptic world.",
+    "characters": [
+      {
+        "name": "Bella Ramsey",
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYoS87ae5ITi6vOrwQKqQYyKf1Vg6_OQf8qHE8EKpbh2WuQ2voeQBW8-pzO_5stOSHOp-J7GzZu0bg0D1qnuX9gg"
+      },
+      {
+        "name": "Pedro Pascal",
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmBEb6kB-pIuo7rxJ-SlKkXUFtsMBb2ir0Db56KIJ1T9yAVrCf5ht8Cf7G0G2m6aQwE-xlU1a3sB8zKieX3MiV6A"
+      }
+    ]
   },
+
   {
     "src": "https://i.pinimg.com/1200x/c3/02/c8/c302c825e169f2f0e11cc42ce4a6acb7.jpg",
-    "title": "The Host"
+    "title": "The Host",
+    "banner": "https://i.ytimg.com/vi/0rlXWuFhSK0/hqdefault.jpg",
+    "description": "A monster from the river terrorizes a city.",
+    "characters": [
+      {
+        "name": "Song Kang-ho",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/df/Song_Gangho_2016.jpg"
+      }
+    ]
   },
+
   {
     "src": "https://i.pinimg.com/736x/9b/11/4a/9b114afbcf94896ee62a8e19e12d314a.jpg",
-    "title": "The Conjuring Universe"
+    "title": "The Conjuring Universe",
+    "banner": "https://upload.wikimedia.org/wikipedia/commons/9/91/The_Conjuring_Universe_logo.jpg",
+    "description": "The chilling stories of Ed and Lorraine Warren.",
+    "characters": [
+      {
+        "name": "Patrick Wilson",
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjopGOn__72FNwyf2oTm2GK3poibg97AUT8-oCZfILF36PhkAh7tLtEKdmeWUC4cCdWTgAhg2GW-0WGJ_6o98FTSp8uUizMocyWT5HPg"
+      },
+      {
+        "name": "Vera Farmiga",
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEWg_AFRQW5uUwIW-oHrsM6-LYRGKr8mT1W6UO3ohi4BaL2rk8h8M--xcxdpvqIYMX_xLH0fwFX4I8mMDOkwbfhg"
+      }
+    ]
   },
+
   {
     "src": "https://i.pinimg.com/736x/40/f2/0f/40f20f49be7345c7221a4cc56fefc830.jpg",
-    "title": "Terrifier"
+    "title": "Terrifier",
+    "banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl0R5D4yuA8Ol3Q2PRIW7a__Q1xWlpG0Vgcg&s",
+    "description": "A terrifying clown wreaks havoc.",
+    "characters": [
+      {
+        "name": "David Howard Thornton",
+        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSKVVzzZiQS1ouI0ecnAqOYq350K6BQQMsnWJsbiK2Imydf8I_jL4QnGbhLwGTmaA6cEHrcNjQmUvu52X2Q_gD5w"
+      }
+    ]
   },
+
   {
     "src": "https://i.pinimg.com/1200x/e4/3e/e6/e43ee6a71fc74ce3c97f82f122710b30.jpg",
-    "title": "Ouija"
+    "title": "Ouija",
+    "banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKKDOML4Vv9EDHmznSHeqeB-EMEjJcp4vofg&s",
+    "description": "A group of friends awaken dark spirits.",
+    "characters": [
+      {
+        "name": "Daren Kagasoff",
+        "image": "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSBUoFw5i4evN0X8N-4wTnEivXyjV6N2HQQbcw_CKVVqo8aGbqXAFZ_NOuQI5JOf67tOIg3NohGxoIEu-0"
+      }
+    ]
   },
+
   {
     "src": "https://i.pinimg.com/736x/92/b6/ad/92b6addb64965ebf7a8831c780a88b73.jpg",
-    "title": "LAND OF THE DEAD"
+    "title": "LAND OF THE DEAD",
+    "banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEsIWIp9nqjhqFYDoAZQymxNXABCsVvDcXnQ&s",
+    "description": "Zombies have overrun the world.",
+    "characters": [
+      {
+        "name": "John Leguizamo",
+        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQb8pZ_mjTVUgyLARnAXZTX5uyB_N2CVkWxvJ4d7whZEdtQQVNapHkNvfSszImzssDzTBSZaPCul-GZ5-OeREF9Ig"
+      }
+    ]
   },
+
   {
     "src": "https://i.pinimg.com/1200x/e7/72/e5/e772e519e5dabb9e61e825cd02eb4228.jpg",
-    "title": "A quite place"
+    "title": "A quite place",
+    "banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpcJ_SL-choy_NeVlhIWB_VYo2blpj1M8C_Q&s",
+    "description": "Silence is survival in a world full of monsters.",
+    "characters": [
+      {
+        "name": "Emily Blunt",
+        "image": "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQH_BA_krND8RR1fA4WYSO_zMYfkst_UYrhHf9Ag26hXnJjrysZh_GyVpgjkkbxd-Lud9RjyAFc7yztSOlMFNrgn1gAPqe41x9vFy4t7lLg3BeHvXHaf6qKuhu1nEU8IzY3jR_LWAFx"
+      }
+    ]
   },
+
   {
     "src": "https://i.pinimg.com/1200x/70/ce/d0/70ced03f09ac66f2026183f1f06d9204.jpg",
-    "title": "Evil Dead Rise"
+    "title": "Evil Dead Rise",
+    "banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRViXic-tSns4JtTy1A39lIUCcd_4ew4wYsHw&s",
+    "description": "A twisted new tale of the undead rising.",
+    "characters": [
+      {
+        "name": "Alyssa Sutherland",
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBxOu6EISIg3zXroHDy0GSKufdVDn1zT0mTni-2xcBBy47VYXhqDpI6wAR0UCUiidps4iutB3x9uCaIO0YJLyEje0XkkATCjHzKExDxw"
+      }
+    ]
   }
 ]
