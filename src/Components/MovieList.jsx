@@ -42,7 +42,6 @@ const MovieList = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredMovies, setFilteredMovies] = useState([]);
 
-  // Get current user from localStorage
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
   const watchListKey = `watchLaterList_${currentUser?.id || currentUser?.name}`;
 
@@ -61,17 +60,18 @@ const MovieList = () => {
 
     const allMovies = [...dataWithId, ...trendingWithFlag];
     setMovies(allMovies);
-    setFilteredMovies(allMovies);
+    setFilteredMovies(dataWithId); // only regular movies for initial view
   }, []);
 
-  // Update filteredMovies as user types
   useEffect(() => {
     const query = searchQuery.toLowerCase();
     if (query === "") {
-      setFilteredMovies(movies);
+      const regularMovies = movies.filter((movie) => !movie.trending);
+      setFilteredMovies(regularMovies);
     } else {
-      const filtered = movies.filter((movie) =>
-        movie.title.toLowerCase().includes(query)
+      const filtered = movies.filter(
+        (movie) =>
+          movie.title.toLowerCase().includes(query) && !movie.trending
       );
       setFilteredMovies(filtered);
     }
@@ -90,8 +90,7 @@ const MovieList = () => {
     }
   };
 
-  const trendingMovies = filteredMovies.filter((movie) => movie.trending);
-  const regularMovies = filteredMovies.filter((movie) => !movie.trending);
+  const trendingMovies = movies.filter((movie) => movie.trending);
 
   return (
     <>
@@ -108,7 +107,7 @@ const MovieList = () => {
         </div>
       </div>
 
-      {/* Search Results (trending + regular together) */}
+      {/* Search Results - Only Regular Movies */}
       <div className="mt-10 px-4 flex flex-wrap justify-center gap-6 relative">
         {filteredMovies.length > 0 ? (
           filteredMovies.map((movie, index) => (
@@ -116,15 +115,6 @@ const MovieList = () => {
               key={index}
               className="relative text-white p-[30px] rounded-lg shadow-md w-58 text-center transform transition duration-300 hover:scale-105 hover:bg-white hover:text-black cursor-pointer"
             >
-              {/* Badge image for trending movies */}
-              {movie.trending && (
-                <img
-                  src={badgeImages[movie.badgeIndex] || ""}
-                  alt={`Number ${movie.badgeIndex + 1}`}
-                  className="absolute -left-6 top-1/2 transform -translate-y-1/2 h-[40px] w-auto z-10 rounded-full"
-                />
-              )}
-
               <img
                 src={movie.src}
                 alt={movie.title}
@@ -147,7 +137,7 @@ const MovieList = () => {
         )}
       </div>
 
-      {/* Trending Movies (only show if no search query) */}
+      {/* Trending Movies (only show when no search query) */}
       {searchQuery === "" && (
         <div>
           <h1 className="text-3xl font-bold text-white text-center mt-12">
